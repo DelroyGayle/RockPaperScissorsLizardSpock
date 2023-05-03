@@ -33,23 +33,51 @@
                     <br>
                     <p>Best of:</p>
                     <br>
-                    <div class="left-margin radio-gap">
-                        <input type="radio" id="fifteen" name="total_numberof_rounds" value="15" checked>
-                        <label for="fifteen">15 (default)</label>
+                    <div id="rounds-radio-group" class="left-margin">
+                        <div class="radio-wrap">
+                          <label for="fifteen">15 (default)</label>
+                          <input type="radio" name="total_numberof_rounds" id="fifteen" value="15" checked>
+                        </div>
+                      
+                        <div class="radio-wrap">
+                          <label for="ten">10</label>
+                          <input type="radio" name="total_numberof_rounds" id="ten" value="10">
+                        </div>
+                        <div class="radio-wrap">
+                          <label for="five">5</label>
+                          <input type="radio" name="total_numberof_rounds" id="five" value="5">
+                        </div>
+                        <div class="radio-wrap">
+                          <label for="random">Random number (1 - 15)</label>
+                          <input type="radio" name="total_numberof_rounds" id="random" value="random">
+                        </div>
+                      </div>
+                    <br>
+                </form>
+                <footer class="footer-container">
+                    <div class="rules-container" id="the-rules-container">
+                        <h2 id="rules-header">THE RULES OF THE GAME ARE AS FOLLOWS:</h2>
+                        <p>Scissors cuts Paper | Paper covers Rock | Rock crushes Lizard</p>
+                        <p>Lizard poisons Spock | Spock smashes Scissors | Scissors decapitates Lizard</p>
+                        <p>Lizard eats Paper | Paper disproves Spock | Spock vaporises Rock | Rock crushes Scissors</p>
                         <br>
-                        <input type="radio" id="ten" name="total_numberof_rounds" value="10">
-                        <label for="ten">10</label>
+                        <div class="video-container">
+                            <p>If you would like a demonstration</p>
+                            <p>please watch the following
+                                <a href="https://www.youtube.com/watch?v=iapcKVn7DdY" target="_blank" rel="noopener">video</a>
+                            </p>
+                        </div>
                         <br>
-                        <input type="radio" id="five" name="total_numberof_rounds" value="5">
-                        <label for="five">5</label>
+                        <p>Please choose your weapon by clicking either</p>
+                        <p>Rock, Paper, Scissors, Lizard or Spock</p>
+                        <p>Whoever wins gets a point</p>
                         <br>
-                        <input type="radio" id="random" name="total_numberof_rounds" value="random">
-                        <label for="random">Random number (1 - 15)</label>
+                        <input type="submit" value="Let's Play!" id="lets-play">
                     </div>
                     <br>
-                    <br>
-                    <input type="submit" value="Let's Play!" class="left-margin">
-                </form>
+                    
+    
+                </footer>
             </div>
         </div>
     </section>
@@ -113,26 +141,8 @@
         <br>
         <div id="play-again"></div>
     </section>
-    <section class="show-rules-page">
-        <h1 class="header-margin-forgame">
-            Rock Paper Scissors Lizard Spock
-        </h1>
-        <br>
-        <div class="rules-container" id="the-rules-container">
-        </div>
-        <br>
-        <div class="video-container">
-            <p>If you would like a demonstration</p>
-            <p>please watch the following
-                <a href="https://www.youtube.com/watch?v=iapcKVn7DdY" target="_blank" rel="noopener">video</a>
-            </p>
-            <br>
-            <button id="the-ok-button" class="rules-button">OK</button>
-        </div>
-    </section>
-    <button id="the-rules-button" class="rules-button">Rules</button>
     <script src="https://kit.fontawesome.com/91349736c3.js" crossorigin="anonymous"></script>
-    <script src="assets/js/rpsln.js" defer></script>
+    <script src="assets/js/rpslnX.js" defer></script>
     <noscript>Your browser does not support JavaScript!</noscript>
 </body>
 
