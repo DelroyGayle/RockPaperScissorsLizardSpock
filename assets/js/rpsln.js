@@ -136,7 +136,7 @@ function runTheGame() {
 
    /*
       NOTE: The button order is different as it matches the name of the game
-      Therefore need an array of indices to reflect: 
+      Therefore need an array of indices to reflect the order: 
       Rock Paper Scissors Lizard Spock
       values as shown in 'hand_weapons'
    */
@@ -185,10 +185,12 @@ function runTheGame() {
    */
    let weaponWeights = Array(numberOfWeapons).fill(1);
 
-   /* Regarding the Rules page */   
+/* todo   
+   / * Regarding the Rules page * /   
    let theRulesText = "";   
    // Set up the text regarding the rules of the game
    setupTheRulesText();
+*/
 
    /* Add Event Listener to cater for Orientation Change
       Cater for any height smaller than Nest Hub (1024 x 600)
@@ -232,10 +234,12 @@ function runTheGame() {
       buttonsList[i].addEventListener("click", newListener);
    }
 
+/* todo   
    // Initialise these two buttons
    document.getElementById("the-rules-button").addEventListener("click", showTheRulesPage);
    document.getElementById("the-ok-button").addEventListener("click", removeTheRulesPage);
    document.getElementById("the-ok-button").disabled = true;
+*/
 
    // Initial Form
    const initialForm = document.getElementById("initial-form-id");
@@ -274,6 +278,17 @@ function runTheGame() {
       playGame();
    });
 
+   // Create Home Button
+   const homeButton = document.createElement("button");
+   homeButton.innerText = "Home";
+   // Add styling
+   homeButton.classList.add("playagain-button");
+   homeButton.addEventListener("click", function (event) {
+      event.preventDefault();
+      resetInOrderToPlayAgain();
+      playGame();
+   });
+
    // Create the 'Your Move' indicator
    const your_move_indicator = create_your_move();
 
@@ -287,7 +302,12 @@ function runTheGame() {
    function showYourMoveIndicator() {
       displayContainerElem.appendChild(your_move_indicator);
    }   
-   
+
+   // Show Home Button
+   function showHomeButton() {
+      displayContainerElem.appendChild(homeButton);
+   }  
+
    // Handle the RULES Page
 
    function setupTheRulesText() {
@@ -425,6 +445,8 @@ function runTheGame() {
       game_area_showing = true;
       // Show YOUR MOVE!
       showYourMoveIndicator();
+      // Show Home
+      /*showHomeButton();*/
       // Enable game buttons
       enableButtons();
       // Hide messages
@@ -752,8 +774,10 @@ function runTheGame() {
       // Display the result on the webpage
       displayContainerElem.appendChild(newDiv);
 
+      /* todo
       // Enable the Rules button
       document.getElementById("the-rules-button").disabled = false;
+      */
    }
 
    /**
@@ -820,10 +844,12 @@ function runTheGame() {
   */
 
 function disableButtons() {
+   /*
    const buttonId = document.getElementById("the-rules-button");
    buttonId.disabled = true;
    buttonId.style.opacity = "0.6";
    buttonId.style.cursor = "not-allowed";
+   */
 
    const buttonsList = document.getElementsByClassName("weapon-button");
 
@@ -839,10 +865,12 @@ function disableButtons() {
 */
 
 function enableButtons() {
+   /*
    const buttonId = document.getElementById("the-rules-button");
    buttonId.disabled = false;
    buttonId.style.opacity = "1";
    buttonId.style.cursor = "pointer";
+   */
 
    const buttonsList = document.getElementsByClassName("weapon-button");
 
