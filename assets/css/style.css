@@ -352,7 +352,7 @@ img {
 
 }
 
-/* If Between 600px-640px then push everything up */
+/* For the home page, If Between 600px-640px then push everything up */
 
 @media (min-height: 600px) and (max-height: 640px) {
   * {
