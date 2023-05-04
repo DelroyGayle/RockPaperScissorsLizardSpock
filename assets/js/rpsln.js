@@ -185,13 +185,6 @@ function runTheGame() {
    */
    let weaponWeights = Array(numberOfWeapons).fill(1);
 
-/* todo   
-   / * Regarding the Rules page * /   
-   let theRulesText = "";   
-   // Set up the text regarding the rules of the game
-   setupTheRulesText();
-*/
-
    /* Add Event Listener to cater for Orientation Change
       Cater for any height smaller than Nest Hub (1024 x 600)
       That is, less than 600 pixels
@@ -298,100 +291,11 @@ function runTheGame() {
       console.log(your_move_indicator)
       displayContainerElem.appendChild(your_move_indicator);
    }   
-
+// todo
    // Show Home Button
    function showHomeButton() {
       displayContainerElem.appendChild(homeButton);
    }  
-
-   // Handle the RULES Page
-
-   function setupTheRulesText() {
-
-      const actions = [
-         "21", "cuts",
-         "10", "covers",
-         "04", "crushes",
-         "43", "poisons",
-         "32", "smashes",
-         "24", "decapitates",
-         "41", "eats",
-         "13", "disproves",
-         "30", "vaporises",
-         "02", "crushes"
-      ];
-
-      // | indicates a carriage return i.e. <br>
-      theRulesText = "Kool A.I. is ready to play|Please choose your weapon by clicking either|";
-      theRulesText += "Rock, Paper, Scissors, Lizard or Spock|Whoever wins gets a point|The rules are as follows:||";
-      for (let i=0; i < actions.length; i+=2) {
-            const twoDigits = actions[i];
-            // e.g. 21 ==> 2 stands for Scissors; 1 stands for Paper;
-            const weapon1 = twoDigits[0];
-            const weapon2 = twoDigits[1];
-            const verb = actions[i + 1];
-            // Each item of 'hand_weapons' have the following format [0, "R", "Rock"]
-            theRulesText += `${hand_weapons[+weapon1][2]} ${verb} ${hand_weapons[+weapon2][2]}|`;
-      }                   
-   }
-
-   function clearThePage(rulesButton) {
-      // Disable and remove the Rules button
-      rulesButton.disabled = true;
-      rulesButton.style.display = "none";
-      // Remove everything from the screen
-      // Either the Form page
-      if (!game_area_showing) {
-         document.getElementsByClassName("form-container")[0].style.display = "none";
-      } else {
-         // or the Game page
-         document.getElementsByClassName("show-game")[0].style.display = "none";
-      }
-   }
-
-   function determinePlayerName() {
-      if (!game_area_showing) {
-            // Showing the form - check if the player has inputted their name
-            const myForm = document.getElementsByClassName("show-form")[0];
-            const formPlayerName = myForm.player_name.value.trim();
-            return (formPlayerName !== "") ? titleCase(formPlayerName) : "";
-      }      
-
-      // Otherwise playerName will hold the value of the Player's name if it was inputted
-      return playerName ? playerName : "";
-   }   
-
-   /* Followed the tuturial at https://www.w3schools.com/howto/howto_js_typewriter.asp  
-      in order to create this 'typewriter' effect
-   */
-
-   function typeTheRules(theText) {
-      let i = 0;
-      let speed = 50;
-      const theRulesContainerId = document.getElementById("the-rules-container");
-      typeWriter();
-      
-      function typeWriter() {
-        if (i < theText.length) {
-          const theChar = theText.charAt(i);
-          // * is the indicator to Show the Conclusion and OK button
-          if (theChar === "*") {
-               concludeTheRulesText();
-          } else {
-               // | indicates a carriage return i.e. <br>
-               theRulesContainerId.innerHTML += theChar !== "|" ? theChar : "<br>";
-               theRulesContainerId.classList.add("rules-container");
-          }
-          i++;
-          setTimeout(typeWriter, speed);
-        }
-      }
-
-      function concludeTheRulesText() {
-           // Show the Conclusion and OK button
-           document.getElementsByClassName("video-container")[0].style.display = "block";
-      }
-   }
 
    function playGame() {
       game_area_showing = true;
