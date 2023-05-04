@@ -17,6 +17,17 @@ body {
   color: #8acc25;
 }
 
+/* Use a table to display the rules text */
+
+td:nth-child(1)  {
+    text-align: left;
+}
+
+td:nth-child(2)  {
+    text-align: right;
+    padding-left: 4em;
+}
+
 /* Use flexbox for the main layout of the screen */
 
 .flex {
