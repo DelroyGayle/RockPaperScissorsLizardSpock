@@ -283,14 +283,16 @@ function runTheGame() {
    homeButton.innerText = "Home";
    // Add styling
    homeButton.classList.add("playagain-button");
+   homeButton.style.marginTop = "2em";
    homeButton.addEventListener("click", function (event) {
       event.preventDefault();
-      resetInOrderToPlayAgain();
-      playGame();
+      // resetInOrderToPlayAgain();
+      // playGame();
+      location.reload();
    });
 
    // Create the 'Your Move' indicator
-   const your_move_indicator = create_your_move();
+   const your_move_indicator = create_your_move(homeButton);
 
    // Hide messages
    function hideMessages() {
@@ -298,8 +300,9 @@ function runTheGame() {
       explanationElem.classList.add("hide-element");      
    }
 
-   // Show YOUR MOVE!
+   // Show YOUR MOVE! //todo
    function showYourMoveIndicator() {
+      console.log(your_move_indicator)
       displayContainerElem.appendChild(your_move_indicator);
    }   
 
@@ -771,6 +774,22 @@ function runTheGame() {
       // Add the button to the newly created div
       newDiv.appendChild(playAgainButton);
 
+      
+   // Create Home Button
+   const homeButton = document.createElement("button");
+   homeButton.innerText = "Home";
+   // Add styling
+   homeButton.classList.add("playagain-button");
+   homeButton.style.marginTop = "2em";
+   homeButton.addEventListener("click", function (event) {
+      event.preventDefault();
+      // resetInOrderToPlayAgain();
+      // playGame();
+      location.reload();
+   });
+   
+      newDiv.appendChild(homeButton); //todo
+
       // Display the result on the webpage
       displayContainerElem.appendChild(newDiv);
 
@@ -889,11 +908,28 @@ function titleCase(str) {
    }).join(' ');
 }
 
-function create_your_move() {
+function create_your_move(homeButton) {
    const newDiv = document.createElement("div");
    newDiv.innerText = "Your Move!";
    newDiv.innerHTML = `<i class="fas fa-hand-point-up"></i><br>YOUR MOVE!`;
    newDiv.innerHTML = `<div><i class="fa-solid fa-hand-pointer"></i><p>YOUR</p><p>MOVE!</p>`;
+   // Add styling
+   newDiv.classList.add("circle");
+
+   // // Create Home Button todo +2em to circle and button!
+   // const homeButton = document.createElement("button");
+   // homeButton.innerText = "Home";
+   // // Add styling
+   // homeButton.classList.add("playagain-button");
+
+   const newDiv2 = document.createElement("div");
+         // Add the message to the newly created div
+         newDiv2.appendChild(newDiv);
+
+         // Add the button to the newly created div
+         newDiv2.appendChild(homeButton);
+         return newDiv2 /// todo
+
    // Add styling
    newDiv.classList.add("circle");
    return newDiv;
