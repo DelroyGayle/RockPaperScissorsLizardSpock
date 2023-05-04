@@ -23,7 +23,7 @@ body {
 }
 
 /* Styled 'weapon-button' as shown in the example here:
-   https://www.w3schools.com/howto/howto_css_icon_buttons.asp 
+   https://www.w3schools.com/howto/howto_css_icon_buttons.asp
 */
 
 .weapon-button {
@@ -65,6 +65,8 @@ body {
   display: flex;
 }
 
+/* Add some spacing to the 'challenge' text */
+
 #challenge-text p {
   margin: 1em;
 }
@@ -93,7 +95,7 @@ body {
 }
 
 #align-rounds {
-  margin: 0px 1em 1em 28px;
+  margin: 0 1em 1em 28px;
 }
 
 #align-random {
@@ -104,7 +106,7 @@ body {
 
 
 /* Aligned the radio buttons horizontally as shown by Paulie_D at
-   https://stackoverflow.com/questions/31145973/how-to-align-radio-buttons-horizontally-below-labels 
+   https://stackoverflow.com/questions/31145973/how-to-align-radio-buttons-horizontally-below-labels
 */
 
 #rounds-radio-group .radio-wrap {
@@ -256,11 +258,23 @@ img {
 
 /* ================= MEDIA QUERIES ================= */
 
+@media (min-width: 960px) {
+
+  .final-score-message {
+      font-size: 120%;
+  }
+
+}
+
 @media (max-width: 960px) {
 
   h1,
   h2 {
     font-size: 75%;
+  }
+
+  .header-margin-forgame {
+    font-size: 100%;
   }
 
 /* Create more width */
@@ -307,20 +321,44 @@ img {
     object-position: top;
   }
 
+  /* Handle the length of the player's name */
+
+  .column-centre-aligned h2 {
+    font-size: 75%; /*todo*/
+  } 
+
 }
 
-/* Handle the spacing of the weapon buttons */
-
 @media (max-width: 650px) {
+
+  .header-margin-forgame {
+    font-size: 75%;
+  }
+
+/* Handle the spacing of the weapon buttons */
 
   .flex {
     justify-content: space-between;
   }
 
   .weapon-button {
-    margin: 1em 0em;
+    margin: 1em 0;
     max-width: min-content;
+    font-size: 75%;
   }
+
+}
+
+@media (max-width: 500px) { /* todo*/
+
+    * {
+      font-size: 88%;
+    }
+  
+    h1,
+    h2 {
+      font-size: 70%;
+    }
 
 }
 
@@ -340,7 +378,7 @@ img {
 
 /* Handle the spacing of the weapon buttons */
 
-  .weapon-button {
+  .weapon-button { /* todo dupl */
     font-size: 75%;
   }
 
@@ -348,7 +386,7 @@ img {
 
   .column-centre-aligned h2 {
     font-size: 90%;
-  }    
+  }   
 
 }
 
@@ -356,7 +394,7 @@ img {
 
   .header-margin-forform {
     font-size: 70%;
-  }      
+  }     
 
   .show-form {
     font-size: 60%;
@@ -387,14 +425,14 @@ img {
 
   #align-random {
     margin: 0 2em 0 6px;
-  }  
+  } 
 
 /* Handle the spacing of the weapon buttons */
 
   .flex {
     flex-wrap: wrap;
     justify-content: space-between;
-  }  
+  } 
 
   .weapon-button {
     font-size: 180%;
@@ -410,7 +448,7 @@ img {
 @media (max-width: 360px) {
 
   #align-rounds {
-    margin: 0px 1em 1em 10px;
+    margin: 0 1em 1em 10px;
   }
 
 }
@@ -436,10 +474,10 @@ img {
 
 }
 
-/* ORIGINALLY BEFORE h1,h2 - 280px */
+/* ORIGINALLY BEFORE h1,h2 - 280px todo dupl */
 @media (max-width: 320px) {
 
-  .header-margin-forgame {
+  .header-margin-forgamexxx {
     font-size: 75%;
   }
 
