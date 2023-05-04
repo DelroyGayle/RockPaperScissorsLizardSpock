@@ -193,7 +193,7 @@ function runTheGame() {
    */
    window.addEventListener("orientationchange", function() {
       if(window.innerHeight < 600){
-         alert("Please use your mobile device in portrait mode" + window.innerHeight); // todo
+         alert("Please use your mobile device in portrait mode");
       }
    }, false);   
   
@@ -278,7 +278,7 @@ function runTheGame() {
    });
 
    // Create the 'Your Move' indicator
-   const your_move_indicator = create_your_move(homeButton);
+   const yourmove_and_homebutton = create_your_move(homeButton);
 
    // Hide messages
    function hideMessages() {
@@ -286,23 +286,15 @@ function runTheGame() {
       explanationElem.classList.add("hide-element");      
    }
 
-   // Show YOUR MOVE! //todo
-   function showYourMoveIndicator() {
-      console.log(your_move_indicator)
-      displayContainerElem.appendChild(your_move_indicator);
+   // Show YOUR MOVE! indicator and the Home Button
+   function showYour_and_Homebutton() {
+      displayContainerElem.appendChild(yourmove_and_homebutton);
    }   
-// todo
-   // Show Home Button
-   function showHomeButton() {
-      displayContainerElem.appendChild(homeButton);
-   }  
 
    function playGame() {
       game_area_showing = true;
-      // Show YOUR MOVE!
-      showYourMoveIndicator();
-      // Show Home
-      /*showHomeButton();*/
+      // Show YOUR MOVE! indicator and the Home Button
+      showYour_and_Homebutton();
       // Enable game buttons
       enableButtons();
       // Hide messages
@@ -627,21 +619,19 @@ function runTheGame() {
       // Add the button to the newly created div
       newDiv.appendChild(playAgainButton);
 
-      
-   // Create Home Button
-   const homeButton = document.createElement("button");
-   homeButton.innerHTML = "Home <i class=\"fas fa-home\"></i>";
-   // Add styling
-   homeButton.classList.add("playagain-button");
-   homeButton.style.marginTop = "2em";
-   homeButton.addEventListener("click", function (event) {
-      event.preventDefault();
-      // resetInOrderToPlayAgain();
-      // playGame();
-      location.reload();
-   });
+      // Create Home Button
+      const local_homeButton = document.createElement("button");
+      // Add icon
+      local_homeButton.innerHTML = "Home <i class=\"fas fa-home\"></i>";
+      // Add styling
+      local_homeButton.classList.add("playagain-button");
+      local_homeButton.style.marginTop = "2em";
+      local_homeButton.addEventListener("click", function (event) {
+         event.preventDefault();
+         location.reload();
+      });
 
-      newDiv.appendChild(homeButton); //todo
+      newDiv.appendChild(local_homeButton);
 
       // Display the result on the webpage
       displayContainerElem.appendChild(newDiv);
@@ -745,28 +735,16 @@ function titleCase(str) {
 }
 
 function create_your_move(homeButton) {
+   const yourmoveDiv = document.createElement("div");
+   yourmoveDiv.innerHTML = `<div><i class="fa-solid fa-hand-pointer"></i><p>YOUR</p><p>MOVE!</p>`;
+   // Add styling
+   yourmoveDiv.classList.add("circle");
+
    const newDiv = document.createElement("div");
-   newDiv.innerText = "Your Move!";
-   newDiv.innerHTML = `<i class="fas fa-hand-point-up"></i><br>YOUR MOVE!`;
-   newDiv.innerHTML = `<div><i class="fa-solid fa-hand-pointer"></i><p>YOUR</p><p>MOVE!</p>`;
-   // Add styling
-   newDiv.classList.add("circle");
+   // Add "YOUR MOVE!" indicator to the newly created div
+   newDiv.appendChild(yourmoveDiv);
 
-   // // Create Home Button todo +2em to circle and button!
-   // const homeButton = document.createElement("button");
-   // homeButton.innerText = "Home";
-   // // Add styling
-   // homeButton.classList.add("playagain-button");
-
-   const newDiv2 = document.createElement("div");
-         // Add the message to the newly created div
-         newDiv2.appendChild(newDiv);
-
-         // Add the button to the newly created div
-         newDiv2.appendChild(homeButton);
-         return newDiv2 /// todo
-
-   // Add styling
-   newDiv.classList.add("circle");
+   // Add a home button to the newly created div
+   newDiv.appendChild(homeButton);
    return newDiv;
 }
