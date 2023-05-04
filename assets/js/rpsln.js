@@ -266,7 +266,7 @@ function runTheGame() {
 
    // Create Home Button
    const homeButton = document.createElement("button");
-   homeButton.innerText = "Home";
+   homeButton.innerHTML = "Home <i class=\"fas fa-home\"></i>";
    // Add styling
    homeButton.classList.add("playagain-button");
    homeButton.style.marginTop = "2em";
@@ -630,7 +630,7 @@ function runTheGame() {
       
    // Create Home Button
    const homeButton = document.createElement("button");
-   homeButton.innerText = "Home";
+   homeButton.innerHTML = "Home <i class=\"fas fa-home\"></i>";
    // Add styling
    homeButton.classList.add("playagain-button");
    homeButton.style.marginTop = "2em";
