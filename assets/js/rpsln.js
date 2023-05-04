@@ -200,7 +200,7 @@ function runTheGame() {
    */
    window.addEventListener("orientationchange", function() {
       if(window.innerHeight < 600){
-         alert("Please use your mobile device in portrait mode");
+         alert("Please use your mobile device in portrait mode" + window.innerHeight); // todo
       }
    }, false);   
   
@@ -233,13 +233,6 @@ function runTheGame() {
       // Then determine the computer opponent's response
       buttonsList[i].addEventListener("click", newListener);
    }
-
-/* todo   
-   // Initialise these two buttons
-   document.getElementById("the-rules-button").addEventListener("click", showTheRulesPage);
-   document.getElementById("the-ok-button").addEventListener("click", removeTheRulesPage);
-   document.getElementById("the-ok-button").disabled = true;
-*/
 
    // Initial Form
    const initialForm = document.getElementById("initial-form-id");
@@ -399,50 +392,6 @@ function runTheGame() {
            document.getElementsByClassName("video-container")[0].style.display = "block";
       }
    }
-
-   function showTheRulesPage() {
-      const rulesButton = document.getElementById("the-rules-button");
-     // Remove everything from the screen
-      clearThePage(rulesButton);
-      // Enable the OK button
-      document.getElementById("the-ok-button").disabled = false;
-      // Show the page introduction
-      document.getElementsByClassName("show-rules-page")[0].style.display = "block";
-      // Add the Player's name if present
-      let theText="Greetings";
-      const thePlayerName = determinePlayerName();
-      theText += thePlayerName ? " " + thePlayerName + "!|" : "!|";
-      // * Indicates the conclusion whereby the video link and OK button is then displayed
-      theText += theRulesText + "*";
-      // Type out the Rules
-      typeTheRules(theText);
-   }
-
-   function removeTheRulesPage() {
-      // Remove the displayed page
-      document.getElementsByClassName("show-rules-page")[0].style.display = "none";
-      // Remove the Conclusion and OK button
-      document.getElementsByClassName("video-container")[0].style.display = "none";      
-      // Remove all the elements in 'the-rules-container'
-      const element = document.getElementById("the-rules-container");
-      while (element.firstChild) {
-         element.removeChild(element.firstChild);
-      }      
-      // Disable the OK button
-      document.getElementById("the-ok-button").disabled = true;
-      // Show the Rules button
-      document.getElementById("the-rules-button").style.display = "block";
-      // Enable the Rules button
-      document.getElementById("the-rules-button").disabled = false;
-      // Show the original page
-      // Either the Form page
-      if (!game_area_showing) {
-         document.getElementsByClassName("form-container")[0].style.display = "block";
-      } else {
-         // or the Game page
-         document.getElementsByClassName("show-game")[0].style.display = "block";
-      }
-   }   
 
    function playGame() {
       game_area_showing = true;
@@ -787,16 +736,11 @@ function runTheGame() {
       // playGame();
       location.reload();
    });
-   
+
       newDiv.appendChild(homeButton); //todo
 
       // Display the result on the webpage
       displayContainerElem.appendChild(newDiv);
-
-      /* todo
-      // Enable the Rules button
-      document.getElementById("the-rules-button").disabled = false;
-      */
    }
 
    /**
@@ -863,12 +807,6 @@ function runTheGame() {
   */
 
 function disableButtons() {
-   /*
-   const buttonId = document.getElementById("the-rules-button");
-   buttonId.disabled = true;
-   buttonId.style.opacity = "0.6";
-   buttonId.style.cursor = "not-allowed";
-   */
 
    const buttonsList = document.getElementsByClassName("weapon-button");
 
@@ -884,12 +822,6 @@ function disableButtons() {
 */
 
 function enableButtons() {
-   /*
-   const buttonId = document.getElementById("the-rules-button");
-   buttonId.disabled = false;
-   buttonId.style.opacity = "1";
-   buttonId.style.cursor = "pointer";
-   */
 
    const buttonsList = document.getElementsByClassName("weapon-button");
 
