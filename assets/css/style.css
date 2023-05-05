@@ -19,13 +19,19 @@ body {
 
 /* Use a table to display the rules text */
 
+td {
+  font-size: 2em;
+}
+
 td:nth-child(1)  {
     text-align: left;
+    /* font-size: 2em; */
 }
 
 td:nth-child(2)  {
     text-align: right;
     padding-left: 4em;
+    /* font-size: 2em; */
 }
 
 /* Use flexbox for the main layout of the screen */
@@ -76,6 +82,7 @@ td:nth-child(2)  {
 .form-container {
   display: flex;
   font-size: 90%;
+  /* padding-top: 2em; / todo2 */
 }
 
 /* Add some spacing to the 'challenge' text */
@@ -100,6 +107,7 @@ td:nth-child(2)  {
 .playername-control {
   border: 2px solid #000;
   padding: 10px;
+  padding: 4px 10px; /* todo3 */
   border-radius: 4px;
   box-sizing: border-box;
   margin: 1em 1em;
@@ -144,6 +152,7 @@ input[type=submit],
   background: #6725cc;
   color: white;
   font-size: 150%;
+  font-size: 3em; /* todo4 */
   border: 0 none;
   cursor: pointer;
   border-radius: 5px;
@@ -225,8 +234,9 @@ img {
 }
 
 .rules-header {
-  margin-top: 2em;
+  /* margin-top: 2em; */
   font-size: 125%;
+  font-size: 2em;
 }
 
 /* TODO */
@@ -287,6 +297,29 @@ img {
     font-size: 1.1em;
   }  
 
+  input[type=submit] {
+    margin: 1em auto;
+  } /* todo */  
+
+  #lets-play-button {
+    font-size: 2.8em; /* todo */
+  }  
+
+}
+
+@media (min-width: 768px) {
+  input[type=submit] {
+    margin: 0.4em auto; /* dupl */
+  } 
+  
+  .header-margin-forform {
+      margin: 1em 0;
+  }
+
+  #lets-play-button {
+    font-size: 2em;
+  }
+    
 }
 
 @media (max-width: 960px) {
@@ -379,12 +412,24 @@ img {
       font-size: 70%;
     }
 
+    /* todo1
+    .form-container {
+       padding-top: 8em; / * todo6 * /
+    }
+    */
+
     .show-form {
       font-size: 60%;
+      /*font-size: 155%; /* todo5 */
     }
 
     .rules-container * {
       font-size: 140%; /* 150% */
+    }
+
+
+    #lets-play-button {
+      font-size: 10em; /* todo */
     }
 
 }
@@ -454,7 +499,8 @@ img {
 
   .weapon-button {
     font-size: 180%;
-    padding: 5px 20px;
+    font-size: 2em; /* todo */
+    padding: 5px 15px;
   }
 
 }
@@ -467,6 +513,10 @@ img {
 
   .rules-container {
     font-size: 0.8em; /* 100% */
+  }
+
+  .td1a { /*todo*/
+    font-size: 2em;
   }
 
   #vid2 {
