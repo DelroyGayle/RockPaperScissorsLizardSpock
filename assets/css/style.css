@@ -75,6 +75,7 @@ td:nth-child(2)  {
 
 .form-container {
   display: flex;
+  font-size: 90%;
 }
 
 /* Add some spacing to the 'challenge' text */
@@ -282,6 +283,10 @@ img {
       font-size: 120%;
   }
 
+  .rules-container {
+    font-size: 1.1em;
+  }  
+
 }
 
 @media (max-width: 960px) {
@@ -366,7 +371,7 @@ img {
 @media (max-width: 500px) {
 
     * {
-      font-size: 88%;
+      font-size: 84%;
     }
   
     h1,
@@ -374,8 +379,12 @@ img {
       font-size: 70%;
     }
 
+    .show-form {
+      font-size: 60%;
+    }
+
     .rules-container * {
-      font-size: 150%;
+      font-size: 140%; /* 150% */
     }
 
 }
@@ -456,9 +465,14 @@ img {
     font-size: 180%; /* 115 todo */
   }
 
-  #vid2xx p {
+  .rules-container {
+    font-size: 0.8em; /* 100% */
+  }
+
+  #vid2 {
     /*todo*/
-    font-size: 120%;
+    font-size: 75%;
+    font-size: 2em;
   }
 
 }
@@ -467,7 +481,7 @@ img {
 
   #vid2 p {
     /*todo*/
-    font-size: 150%;
+    font-size: 90%; /* 150% */
   }
 
 }
@@ -476,6 +490,10 @@ img {
 
   #align-rounds {
     margin: 0 1em 1em 10px;
+  }
+
+  .rules-header {
+    font-size: 4em;
   }
 
 }
@@ -514,11 +532,12 @@ img {
 
   .rules-header {
     font-size: 125%; /* 115 todo */
+    font-size: 5em;
   }
 
   #vid2 p {
     /*todo*/
-    font-size: 220%;
+    font-size: 200%; /* todo 220 */
   }
 
 }
@@ -538,6 +557,10 @@ img {
 
   .rules-container {
     font-size: 80%;
+  }  
+
+  .header-margin-forform {
+    font-size: 100%;
   }  
 
 }
