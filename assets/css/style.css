@@ -397,7 +397,7 @@ img {
   }
 
   .rules-container {
-    /* font-size: 55%; */
+    font-size: 150%; /* todo 55% */
   }
 
 }
@@ -486,9 +486,10 @@ img {
 
 }
 
-
+/* todo
 @media (min-height: 960px) {
   .rules-container {
     font-size: 100%;
   }
 }
+*/
