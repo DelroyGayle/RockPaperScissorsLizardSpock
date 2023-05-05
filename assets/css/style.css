@@ -104,6 +104,7 @@ td:nth-child(2)  {
   margin: 1em 1em;
   text-transform: capitalize;
   width: 15%;
+  width: 25%; /* todo */
 }
 
 #align-rounds {
@@ -219,7 +220,7 @@ img {
   font-family: "Krona One", Arial, Tahoma, sans-serif;
   color: #fff;
   text-align: center;
-  font-size: 150%;
+  font-size: 100%; /* 150%; todo */
 }
 
 .rules-header {
@@ -227,11 +228,22 @@ img {
   font-size: 125%;
 }
 
+/* TODO */
 .video-container {
   display: block;
   font-family: "Krona One", Arial, Tahoma, sans-serif;
   color: #fff;
   text-align: center;
+}
+
+
+
+#vid2x * {
+  font-size: 130%;
+}
+
+.video-containerx p {
+  font-size: 225%;
 }
 
 /* No line and blue colour */
@@ -362,6 +374,10 @@ img {
       font-size: 70%;
     }
 
+    .rules-container * {
+      font-size: 150%;
+    }
+
 }
 
 @media (max-width: 460px) {
@@ -371,11 +387,12 @@ img {
   }
 
   .rules-header {
-    font-size: 125%;
+    font-size: 200%; /* todo 125%; */
   }
 
   .rules-container {
-    /* font-size: 65%; */
+    font-size: 130%;
+    font-size: 55%; /* todo*/
 }
 
   /* Handle the length of the player's name */
@@ -383,6 +400,17 @@ img {
   .column-centre-aligned h2 {
     font-size: 90%;
   }   
+
+  #vid2 {
+    /*todo*/
+    font-size: 250%;
+  }
+
+  #vid2 p {
+    /*todo*/
+    font-size: 200%;
+  }
+
 
 }
 
@@ -397,7 +425,7 @@ img {
   }
 
   .rules-container {
-    font-size: 200%; /* todo 55% */
+    /* font-size: 200%; / * todo 55% */
   }
 
 }
@@ -418,6 +446,28 @@ img {
   .weapon-button {
     font-size: 180%;
     padding: 5px 20px;
+  }
+
+}
+
+@media (min-width: 768px) {
+  
+  .rules-headerxx {
+    font-size: 180%; /* 115 todo */
+  }
+
+  #vid2xx p {
+    /*todo*/
+    font-size: 120%;
+  }
+
+}
+
+@media (min-width: 500px) {
+
+  #vid2 p {
+    /*todo*/
+    font-size: 150%;
   }
 
 }
@@ -459,19 +509,25 @@ img {
   }
 
   .rules-container {
-    /* font-size: 100%; */
+    font-size: 40%;
   }
 
   .rules-header {
-    font-size: 115%;
+    font-size: 125%; /* 115 todo */
   }
+
+  #vid2 p {
+    /*todo*/
+    font-size: 220%;
+  }
+
 }
 
 /* MEDIA QUERIES REGARDING HEIGHT */
 
 /* Handle Nest Hub: Height 600px */
 
-@media (max-height: 601px) {
+@media (max-height: 601px) and (min-width: 460px) {
   .show-form p {
     margin: 0;
   }
@@ -486,7 +542,7 @@ img {
 
 }
 
-/* todo
+/* todo 
 @media (min-height: 960px) {
   .rules-container {
     font-size: 100%;
