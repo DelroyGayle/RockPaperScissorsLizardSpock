@@ -455,12 +455,12 @@ img {
     font-size: 90%;
   }   
 
-  #vid2 {
+  #vid2x {
     /*todo*/
     font-size: 250%;
   }
 
-  #vid2 p {
+  #vid2x p {
     /*todo*/
     font-size: 200%;
   }
@@ -519,7 +519,7 @@ img {
     font-size: 2em;
   }
 
-  #vid2 {
+  #vid2x {
     /*todo*/
     font-size: 75%;
     font-size: 2em;
@@ -529,7 +529,7 @@ img {
 
 @media (min-width: 500px) {
 
-  #vid2 p {
+  #vid2x p {
     /*todo*/
     font-size: 90%; /* 150% */
   }
@@ -554,7 +554,7 @@ img {
 
   .weapon-button {
     font-size: 150%;
-    padding: 5px 15px;
+    padding: 5px 20px;
   }
 
   /* After testing with https://ui.dev/amiresponsive
@@ -585,7 +585,7 @@ img {
     font-size: 5em;
   }
 
-  #vid2 p {
+  #vid2x p {
     /*todo*/
     font-size: 200%; /* todo 220 */
   }
