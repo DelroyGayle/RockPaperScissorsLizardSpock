@@ -25,13 +25,13 @@ td {
 
 td:nth-child(1)  {
     text-align: left;
-    /* font-size: 2em; */
+    /* font-siz1: 2em; */
 }
 
 td:nth-child(2)  {
     text-align: right;
     padding-left: 4em;
-    /* font-size: 2em; */
+    /* font-siz1: 2em; */
 }
 
 /* Use flexbox for the main layout of the screen */
@@ -231,6 +231,7 @@ img {
   color: #fff;
   text-align: center;
   font-size: 100%; /* 150%; todo */
+  font-size: 17px;
 }
 
 .rules-header {
@@ -245,6 +246,7 @@ img {
   font-family: "Krona One", Arial, Tahoma, sans-serif;
   color: #fff;
   text-align: center;
+  font-size: 0.875rem;
 }
 
 
@@ -295,6 +297,7 @@ img {
 
   .rules-container {
     font-size: 1.1em;
+    font-size: 17px;
   }  
 
   input[type=submit] {
@@ -358,6 +361,7 @@ img {
 
   .rules-container {
     /* font-size: 80%; */
+    font-size: 10px;
   }
 
   img {
@@ -401,7 +405,7 @@ img {
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 625px) {
 
     * {
       font-size: 84%;
@@ -421,32 +425,35 @@ img {
     .show-form {
       font-size: 60%;
       /*font-size: 155%; /* todo5 */
+      font-size: 180% /* yes6 */
     }
 
     .rules-container * {
       font-size: 140%; /* 150% */
+      font-size: 17px;
     }
 
-
+    #vid3 {
+        font-size: 14px;
+    }
+/* todo
     #lets-play-button {
-      font-size: 10em; /* todo */
+      font-size: 10em; /* todo * /
     }
-
+*/
 }
 
 @media (max-width: 460px) {
 
   .show-form {
     font-size: 60%;
-  }
-
-  .rules-header {
-    font-size: 200%; /* todo 125%; */
+    font-size: 180%; /* dupl */
   }
 
   .rules-container {
     font-size: 130%;
     font-size: 55%; /* todo*/
+    font-size: 17px;
 }
 
   /* Handle the length of the player's name */
@@ -474,9 +481,9 @@ img {
     font-size: 70%;
   }     
 
-  .show-form {
+  /* .show-form {
     font-size: 60%;
-  }
+  } */
 
   .rules-container {
     /* font-size: 200%; / * todo 55% */
@@ -513,6 +520,7 @@ img {
 
   .rules-container {
     font-size: 0.8em; /* 100% */
+    font-size: 10px; /* yes1 */
   }
 
   .td1a { /*todo*/
@@ -542,9 +550,42 @@ img {
     margin: 0 1em 1em 10px;
   }
 
-  .rules-header {
+  /* .rules-header {
     font-size: 4em;
+  } 
+  
+  yes3
+  */
+/* 
+  td {
+      font-size: 1em;
+  } */
+
+  table {
+    width: 100%; /* todo */
   }
+
+  td:nth-child(1)  {
+    text-align: left;
+    font-size: 80%;
+    /* font-siz1: 2em; */
+}
+
+td:nth-child(2)  {
+    text-align: right;
+    padding: 0;
+    font-size: 80%;
+    /* font-siz1: 2em; */
+}
+
+#lets-play-button {
+  margin: 0 auto; /* todo */
+  font-size: 2em;
+}  
+
+.rules-header {
+  font-size: 100%; /* todo 125%; */
+}
 
 }
 
@@ -553,7 +594,7 @@ img {
 @media (max-width: 325px) {
 
   .weapon-button {
-    font-size: 150%;
+    font-size: 160%; /* 150% todo */
     padding: 5px 20px;
   }
 
@@ -576,19 +617,34 @@ img {
     font-size: 100%;
   }
 
+  .form-container {
+    font-size: 70%;
+  }
+
   .rules-container {
     font-size: 40%;
+    font-size: 17px;
   }
 
   .rules-header {
     font-size: 125%; /* 115 todo */
     font-size: 5em;
+    font-size: 12px; /* yes */
   }
+
+  .rules-container * {
+    font-size: 12px;
+}
 
   #vid2x p {
     /*todo*/
     font-size: 200%; /* todo 220 */
   }
+
+  #lets-play-button {
+    margin: 0 auto; /* todo */
+    font-size: 0.7em;
+  } 
 
 }
 
@@ -607,6 +663,7 @@ img {
 
   .rules-container {
     font-size: 80%;
+    font-size: 17px;
   }  
 
   .header-margin-forform {
