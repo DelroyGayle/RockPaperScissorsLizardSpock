@@ -187,7 +187,7 @@ input[type=submit] {
 }
 
 .header-margin-forform {
-  margin: 1em 0 2em 0;
+  margin: 2em 0 2em 0; /* was 1em todo yes */
   text-align: center;
 }
 
@@ -535,6 +535,11 @@ td:nth-child(2)  {
     font-size: 60%;
   } */
 
+  /* yes */
+  h1, h2 {
+    font-size: 150%;
+  }
+
   .rules-container {
     /* font-size: 200%; / * todo 55% */
   }
@@ -561,7 +566,7 @@ td:nth-child(2)  {
 
   .weapon-button {
     font-size: 180%; /* yes */
-    padding: 5px 15px;
+    padding: 5px 20px;
   }
 
 }
