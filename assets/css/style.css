@@ -297,7 +297,7 @@ img {
 
   .rules-container {
     font-size: 1.1em;
-    font-size: 17px;
+    font-size: 17px; /* yes */
   }  
 
   input[type=submit] {
@@ -311,10 +311,11 @@ img {
 }
 
 @media (min-width: 768px) {
-  input[type=submit] {
-    margin: 0.4em auto; /* dupl */
+  /* input[type=submit] {
+    margin: 0.4em auto; / *  todo * /
   } 
-  
+   */
+   
   .header-margin-forform {
       margin: 1em 0;
   }
@@ -333,7 +334,7 @@ img {
   }
 
   .header-margin-forgame {
-    font-size: 100%;
+    font-size: 110%;
   }
 
 /* Create more width */
@@ -352,7 +353,7 @@ img {
   }
 
   .playername-control {
-    width: 30%;
+    width: 30%; /* todo */
   }
 
 }
@@ -381,15 +382,17 @@ img {
 
 @media (max-width: 650px) {
 
-  .header-margin-forgame {
+   /* todo */
+
+  /* .header-margin-forgame {
     font-size: 75%;
-  }
+  } */
 
   /* Handle the length of the player's name */
 
-  .column-centre-aligned h2 {
+  /* .column-centre-aligned h2 {
     font-size: 70%;
-  } 
+  }  */
 
 /* Handle the spacing of the weapon buttons */
 
@@ -458,9 +461,9 @@ img {
 
   /* Handle the length of the player's name */
 
-  .column-centre-aligned h2 {
+  /* .column-centre-aligned h2 {
     font-size: 90%;
-  }   
+  }    */
 
   #vid2x {
     /*todo*/
@@ -505,8 +508,7 @@ img {
   } 
 
   .weapon-button {
-    font-size: 180%;
-    font-size: 2em; /* todo */
+    font-size: 180%; /* yes */
     padding: 5px 15px;
   }
 
@@ -556,14 +558,15 @@ img {
   
   yes3
   */
-/* 
+
+  /* 
   td {
       font-size: 1em;
   } */
-
+/* 
   table {
-    width: 100%; /* todo */
-  }
+    width: 100%; / * todo * /
+  } */
 
   td:nth-child(1)  {
     text-align: left;
@@ -593,8 +596,12 @@ td:nth-child(2)  {
 
 @media (max-width: 325px) {
 
+  .header-margin-forgame {
+    font-size: 100%;
+}
+
   .weapon-button {
-    font-size: 160%; /* 150% todo */
+    font-size: 150%; /* 150% todo */
     padding: 5px 20px;
   }
 
