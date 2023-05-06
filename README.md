@@ -5,7 +5,7 @@
 Created for my Portfolio Project 2 for Code Institute Full Stack Diploma.<br>
 [Link to deployed site](https://delroygayle.github.io/RockPaperScissorsLizardSpock/)<br><br>
 
-![image](https://user-images.githubusercontent.com/91061592/233851131-602024a2-34f5-440f-918e-247c5fa10893.png)
+![image](https://user-images.githubusercontent.com/91061592/236619635-5a629fa9-ded4-4f76-bc84-60f62f1a244c.png)
 
 
 ### Introduction
@@ -80,12 +80,12 @@ For **tablets** the look would be practically the same as the desktop view; just
 
 ![image](https://user-images.githubusercontent.com/91061592/230884481-2b341545-e762-49e3-a944-e6aa6a6f8d86.png)
 
-The wireframes above reflect my initial approach of this project however as I continued development there has been significant changes to the initial look as shown below.
+The wireframes above reflect my initial approach of this project however as I continued development there has been significant changes to the initial look as shown below. For example, I removed the Rules button and replaced it with a Home Button instead. The text explaining the rules will now be on the Home Page.
 
 ***
 ## Design Choice
 
-I came across Anna Peterson's [article](https://javascript.plainenglish.io/the-worlds-easiest-the-rock-themed-rock-paper-scissors-javascript-tutorial-ee99b7f83e69) titled **The World’s Easiest “The Rock” Themed Rock Paper Scissors JavaScript Tutorial**<br>with the caption <em>If you’ve ever wanted Dwayne “The Rock” Johnson to teach you JavaScript, well, this isn’t your lucky day, but it is <strong>almost like</strong> your lucky day!</em><p>
+I came across Anna Peterson's [article](https://javascript.plainenglish.io/the-worlds-easiest-the-rock-themed-rock-paper-scissors-javascript-tutorial-ee99b7f83e69) titled <br>**The World’s Easiest “The Rock” Themed Rock Paper Scissors JavaScript Tutorial** with the caption <br><em>If you’ve ever wanted Dwayne “The Rock” Johnson to teach you JavaScript, well, this isn’t your lucky day, but it is <strong>almost like</strong> your lucky day!</em><p>
 
 I really liked her innovative approach so I have adapted the same approach.
 That is, I looked for images and icons which would depict each of the five weapons for the game.
@@ -123,6 +123,8 @@ body {
 ## How to Play
 
 ### The Form
+  
+![image](https://user-images.githubusercontent.com/91061592/236620137-0e4af444-5f48-48f8-a65d-c6bc01b3042f.png)
 
 At the onset the user is presented with a form whereby the user can **optionally** enter their name.<br>That is, it is not compulsory to enter one's name. It can be left blank.
 <br>Then the user chooses the number of rounds. The choice being:
@@ -131,22 +133,31 @@ At the onset the user is presented with a form whereby the user can **optionally
 * 5 or 
 * a random number between 1 and 15 inclusive.
 
-Then the user presses ***Let's Play!*** to begin the game.
-  
-![image](https://user-images.githubusercontent.com/91061592/233741670-e4ea1763-4ffc-4df1-b1fa-ef63df971676.png)
+Then comes the text explaining the rules of the game.
+ 
+The word <strong><em>video</em> coloured green</strong> is a link that when clicked will open up a YouTube video of [an episode of ***Big Bang Theory***](https://www.youtube.com/watch?v=iapcKVn7DdY) where Sheldon explains and demonstrates the game to Raj.
 
+![image](https://user-images.githubusercontent.com/91061592/233870411-f2e90a23-f48c-47b6-abfa-d6baa91b0fd1.png)
+
+At the bottom of the page is the button labelled ***Let's Play!***
+The user presses this button to begin the game.
+
+***  
+  
 ### The Game
+
+![image](https://user-images.githubusercontent.com/91061592/236620657-23bc3ed5-c450-4a12-9465-30add9815b95.png)
 
 The user is prompted by the **YOUR MOVE!** prompt to choose between the five buttons which correspond to the weapons,<br> ***Rock, Paper, Scissors, Lizard or Spock.*** 
 
-![image](https://user-images.githubusercontent.com/91061592/233741911-1fdaacb7-213b-4a90-89b4-49aa65021568.png)
-
-  
 Once the user makes their choice, the computer AKA ***Kool AI*** will respond with its choice of weapon.<br>
-An image depicting the user's weapon choice is shown on the left; seconds later, an image of ***Kool AI***'s weapon choice is then shown on the right.<br><br>
+An image depicting the user's weapon choice is shown on the left; seconds later, an image of ***Kool AI***'s weapon choice is then shown on the right.<br>
 
 The winner of that round is then determined and a message is shown to explain why the user ***either won or lost that round.***<br> 
 Then a point is given to the victor. 
+
+At any time, the user can choose to reset the game by clicking the Home button which in turn will send the user back to the Home page.
+Thereby the user can enter a different ***rounds number*** choice and a new name. The scoring will be reset.
 
 #### Game Play Examples
   
@@ -229,19 +240,8 @@ This shows the standings between the player and the computer, it gets updated af
 * This shows what happens when the game ends as a draw.
 
 ![image](https://user-images.githubusercontent.com/91061592/233778610-f9e7c604-c8e3-4d9b-bd9f-7421e46e9008.png)
-    
-### Rules
 
-When the user clicks the **Rules Button** the following page is displayed.<br>
-Kool A.I. actually ***types out*** the rules for the user to read!<br>
-
-![image](https://user-images.githubusercontent.com/91061592/233870731-0a63117c-b32f-4ad4-bad2-723a400bdd3f.png)
-
-The green link at the bottom will open up a YouTube video of [an episode of ***Big Bang Theory***](https://www.youtube.com/watch?v=iapcKVn7DdY) where Sheldon explains and demonstrates the game to Raj.
-
-![image](https://user-images.githubusercontent.com/91061592/233870411-f2e90a23-f48c-47b6-abfa-d6baa91b0fd1.png)
-
-***
+***    
 ### Mathematics determines the winner
 
 Modulo-5, that is, the remainder after dividing an integer by five, is used to determine the winner of each round.<br>
