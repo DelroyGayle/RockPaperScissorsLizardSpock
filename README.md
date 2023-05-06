@@ -537,6 +537,13 @@ No errors found when running the code through [the Jshint validator](https://jsh
 
 
 ## Bugs
+  
+### Version 1
+  
+It was explained to me that my initial navigation model was not compliant.
+I had to start over as a result.
+
+However, if one would like to see the original, you may do so [here](https://github.com/DelroyGayle/RockPaperScissorsLizardSpockVersion1).  
 
 ### Script kept on running even after throwing an error!
 
