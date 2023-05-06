@@ -76,7 +76,7 @@ function runTheGame() {
       "spock2.png",
       "spock3.png"];
 
-   // Image's Alternate Text
+   // Image Alternate Texts
 
    const theListOfAltText = [
       "The Rock AKA Dwayne Johnson",
@@ -96,7 +96,7 @@ function runTheGame() {
       "Star Trek Character 'Spock' as portrayed by Leonard Simon Nimoy (1931 - 2015)"
    ];
 
-   // Us object-fit: fill; except for these two images
+   // Use object-fit: fill; except for these two images
    const fillImages = [8, 9];
 
    /* Give each weapon its own number and letter    
@@ -219,10 +219,10 @@ function runTheGame() {
          throw `${errorMessage}. Aborting!`;
       }
 
-      // create a listener for the current value of 'weaponValues'
+      // Create a listener for the current value of 'weaponValues'
       let newListener = createListener(showThisImage,weaponValues);
 
-      // In this event, Call 'showThisImage' with the corresponding 'weaponValues' to display the images
+      // In this event, call 'showThisImage' with the corresponding 'weaponValues' to display the images
       // Then determine the computer opponent's response
       buttonsList[i].addEventListener("click", newListener);
    }
@@ -235,11 +235,11 @@ function runTheGame() {
       const myForm = document.getElementsByClassName("show-form")[0];
       const formPlayerName = myForm.player_name.value.trim();
       const formNumberOfRounds = parseInt(myForm.total_numberof_rounds.value);
-      // if 'random' was selected generate a random number between 1 and 15 inclusive
+      // If 'random' was selected generate a random number between 1 and 15 inclusive
       [total_numberof_rounds, random_chosen] = Number.isNaN(formNumberOfRounds) ?
                                                    [Math.floor(Math.random() * 15) + 1, true] :
                                                    [formNumberOfRounds, false];
-      // Handle submit. That is, remove the form and show the game layout
+      // Handle Submit. That is, remove the form and show the game layout
       document.getElementsByClassName("form-container")[0].style.display = "none";
       numberOfRoundsElem.innerText = String(total_numberof_rounds);
       document.getElementsByClassName("show-game")[0].style.display = "block";
@@ -272,8 +272,7 @@ function runTheGame() {
    homeButton.style.marginTop = "2em";
    homeButton.addEventListener("click", function (event) {
       event.preventDefault();
-      // resetInOrderToPlayAgain();
-      // playGame();
+      /* When this button is pressed, refresh and reload the home page */
       location.reload();
    });
 
@@ -287,14 +286,14 @@ function runTheGame() {
    }
 
    // Show YOUR MOVE! indicator and the Home Button
-   function showYour_and_Homebutton() {
+   function showYourMove_and_Homebutton() {
       displayContainerElem.appendChild(yourmove_and_homebutton);
    }   
 
    function playGame() {
       game_area_showing = true;
       // Show YOUR MOVE! indicator and the Home Button
-      showYour_and_Homebutton();
+      showYourMove_and_Homebutton();
       // Enable game buttons
       enableButtons();
       // Hide messages
@@ -303,7 +302,7 @@ function runTheGame() {
 
    /**
     * imageInfo has the form [4, "L", "Lizard"]
-    * So fetch the middle letter to determine type of image
+    * So fetch the middle letter to determine the type of image
     * Then pick a random number 0, 1 or 2
     * Add that to the corresponding base index in imageIndices
     * Retrieve the corresponding image and its alternate text
@@ -348,8 +347,7 @@ function runTheGame() {
       displayContainerElem.appendChild(theImage);
    }
 
-   /**
-    * 
+   /** 
     * For each of the five weapons, 'weaponValues' will have a different value
     * In order to add the current value of 'weaponValues' to a new addEventListener function
     * so that it can be added to its corresponding button currently being processed;
@@ -357,6 +355,7 @@ function runTheGame() {
     * The newly created function is then returned whereby addEventListener()
     * will be used to add it to the corresponding button
     */
+
    function createListener(showThisImage, weaponValues) {
       return function () {
          showThisImage(weaponValues);
@@ -366,7 +365,9 @@ function runTheGame() {
       };
    }
 
-   // STRATEGY 1 - Weighted Random Number - see README.md for explanation
+   /**
+    * STRATEGY 1 - Weighted Random Number - see README.md for explanation
+    */
 
    function strategy1_determineWeightedComputerChoice() {
          const randomNumber = Math.random();
@@ -383,16 +384,16 @@ function runTheGame() {
    }
 
 
-   /* STRATEGY 2 - Heuristics in Decision Theory - see README.md for further explanation
-   
-      Here is the winning strategy in the form of two heuristics:
-
-      If you win using one element, for the next round, 
-      go for whatever element your opponent just lost with in the current round.
- 
-      If you lose using one element, for the next round, 
-      go for whatever was not called by either of the players in the current round.
-   */
+   /** STRATEGY 2 - Heuristics in Decision Theory - see README.md for further explanation
+    *
+    * Here is the winning strategy in the form of two heuristics:
+    *
+    * If you win using one element, for the next round, 
+    * go for whatever element your opponent just lost with in the current round.
+    *
+    * If you lose using one element, for the next round, 
+    * go for whatever was not called by either of the players in the current round.
+    */
 
    function strategy2_heuristics() {
       if (previousOutcome === playerTies) {
@@ -401,7 +402,7 @@ function runTheGame() {
       }
 
       if (previousOutcome === playerLost) {
-         // go for whatever element your opponent just lost with
+         // Go for whatever element your opponent just lost with
                return previousPlayerChoice;
       }
 
@@ -485,12 +486,12 @@ function runTheGame() {
       diff %= numberOfWeapons;
 
       if (diff % 2 !== 0) {
-         // odd; player wins!
+         // Odd number; player wins!
          incrementPlayerWins();
          previousOutcome = playerWon;
          return playerWon;
       } else {
-         // even; computer wins!
+         // Even number; computer wins!
          incrementComputerWins();
          nextStrategyMove();
          previousOutcome = playerLost;
@@ -696,7 +697,7 @@ function runTheGame() {
 
 }
 
-/**
+ /**
   * Disable the other buttons so that there is no user interruption
   */
 
@@ -713,7 +714,7 @@ function disableButtons() {
 
 /**
  * Enable the other buttons to allow user interaction
-*/
+ */
 
 function enableButtons() {
 

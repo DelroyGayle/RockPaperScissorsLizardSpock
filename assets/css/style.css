@@ -220,7 +220,7 @@ input[type=submit] {
   font-size: 100%;
 }
 
-/* This is how the image of each character will be shown */
+/* This is how the image of each character/weapon will be shown */
 
 img {
   width: 14vw;
@@ -244,7 +244,7 @@ img {
   line-height: 2em;
 }
 
-/* No line and blue colour */
+/* No line and no blue colour */
 
 .a, .a:link, a:visited, a {
   text-decoration: none;
@@ -260,7 +260,7 @@ img {
 
 .error-message-style {
   padding: 16px;
-  /* lightgray */
+  /* Lightgray */
   background-color: #d3d3d3;
   font-family: "Times New Roman", Times, serif;
   color: #000;
@@ -378,7 +378,7 @@ img {
 
 @media (max-width: 650px) {
 
-/* Handle the spacing of the weapon buttons */
+  /* Handle the spacing of the weapon buttons */
 
   .flex {
     justify-content: space-between;
@@ -433,7 +433,7 @@ img {
 
 @media (max-width: 540px) {
 
-/* Align the word 'Rounds' */
+  /* Align the word 'Rounds' */
     
   #align-rounds {
     margin-left: 10px;
