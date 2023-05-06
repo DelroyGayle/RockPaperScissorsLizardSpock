@@ -459,11 +459,13 @@ img {
 */
 
 /* todo check */
+/* Align the words 'Rounds' and 'Random' todo */
+
 #align-rounds {
   margin: 0 1em 1em 12px;
 }
 #align-random {
-  margin: 0 2em 0 -15px;
+  margin: 0 2em 0 -4px;
 }
 
 .header-margin-forform {
@@ -608,6 +610,8 @@ td:nth-child(2)  {
   .weapon-button {
     font-size: 180%; /* yes */
     padding: 5px 20px;
+    flex: 0 0 100%;
+    max-width: 75px;
   }
 
 }
@@ -656,7 +660,7 @@ td:nth-child(2)  {
     font-size: 150%; /* 150% todo */
     padding: 5px 20px;
     flex: 0 0 100%;
-    max-width: 65px
+    max-width: 65px;
   }
 
 
