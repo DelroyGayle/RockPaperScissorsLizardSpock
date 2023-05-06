@@ -148,12 +148,12 @@ The user presses this button to begin the game.
 
 ![image](https://user-images.githubusercontent.com/91061592/236620657-23bc3ed5-c450-4a12-9465-30add9815b95.png)
 
-The user is prompted by the **YOUR MOVE!** prompt to choose between the five buttons which correspond to the weapons,<br> ***Rock, Paper, Scissors, Lizard or Spock.*** 
+The user is prompted by the **YOUR MOVE!** prompt to choose between the five buttons <br>which correspond to the weapons, ***Rock, Paper, Scissors, Lizard or Spock.*** 
 
 Once the user makes their choice, the computer AKA ***Kool AI*** will respond with its choice of weapon.<br>
 An image depicting the user's weapon choice is shown on the left; seconds later, an image of ***Kool AI***'s weapon choice is then shown on the right.<br>
 
-The winner of that round is then determined and a message is shown to explain why the user ***either won or lost that round.***<br> 
+The winner of that round is then determined and a message is shown to explain why the user ***either won or lost that round.*** 
 Then a point is given to the victor. 
   
 At any time, the user can choose to reset the game by clicking the Home button which in turn will send the user back to the Home page.
@@ -278,8 +278,7 @@ To demonstrate - **Player one being the User** and ***Player two being the Compu
 
 ### Orientation Change
 
-Although I employed responsive design when creating this game, it is still intended to operate in portrait mode.<br>Therefore, when used on a device which has a height in landscape mode less than that of a Nest Hub, that is, 600 pixels;<br>
-an alert message will be displayed prompting the user to use the device in portrait mode.<br>
+Although I employed responsive design when creating this game, it is still intended to operate in portrait mode.<br>Therefore, when used on a device which has a height in landscape mode less than that of a Nest Hub, that is, <br>600 pixels; an alert message will be displayed prompting the user to use the device in portrait mode.<br>
 
 ![image](https://user-images.githubusercontent.com/91061592/235243596-bfa014ac-0d41-4ffc-b29b-5ffbcc5d6c1f.png)
 
@@ -461,8 +460,8 @@ The fifteen images are as follows:
 It has been stated that ***"The optimal file size for website images should be no more than 200 KB to ensure fast loading times, as images have a significant impact on site speed."***
 <br>
 In light of these facts: 
-1. I used [TinyPNG](https://tinypng.com/) to compress the sizes of **'spock1.png, spock3.png, scissors1.png and rock2_dwayne.png'** so that they are less than 200 KB.
-2. I used [Shutterstock Image Resizer](https://www.shutterstock.com/image-resizer) to compress the sizes of **'rock1_dwayne.png and scissors2_daniil_onischenko_unsplash.jpg'** so that they are less than 200 KB.
+1. I used [TinyPNG](https://tinypng.com/) to compress the sizes of **'spock1.png, spock3.png, scissors1.png and rock2_dwayne.png'** <br>so that they are less than 200 KB.
+2. I used [Shutterstock Image Resizer](https://www.shutterstock.com/image-resizer) to compress the sizes of **'rock1_dwayne.png and scissors2_daniil_onischenko_unsplash.jpg'** <br>so that they are less than 200 KB.
 
 ## Fonts
 
@@ -740,7 +739,7 @@ This project was deployed using GitHub using the following method:
 1. Open the correct repository.
 2. Click on **Settings** in the menu.
 3. Click on **Pages** in the side menu.
-4. Go down to **Branch** under **Build and deployment** and select main in the dropdown.  
+4. Go down to **Branch** under **Build and deployment** and select **main** in the dropdown.  
 5. Save the changes. Then wait for a link that should appear at the top of the screen under GitHub Pages.<br>
 The link would be worded as **Your site is live at https://***\<Your GitHub Name\>***.github.io\/***\<Repo Name\>***/** <br>followed by a
 **Visit site** button.<br> 
