@@ -475,7 +475,7 @@ img {
 @media (max-width: 540px) {
 
   /* yes */
-  
+
   table {
     width: 90%;
   }
@@ -644,7 +644,7 @@ td:nth-child(2)  {
 
 }
 
-/* Handle the spacing of the weapon buttons */
+/* Handle the spacing of the weapon buttons on mobile phones */
 
 @media (max-width: 325px) {
 
@@ -655,7 +655,10 @@ td:nth-child(2)  {
   .weapon-button {
     font-size: 150%; /* 150% todo */
     padding: 5px 20px;
+    flex: 0 0 100%;
+    max-width: 65px
   }
+
 
   /* After testing with https://ui.dev/amiresponsive
      The YOUR MOVE! needs to be smaller
