@@ -189,6 +189,7 @@ input[type=submit] {
 .header-margin-forform {
   margin: 2em 0 2em 0; /* was 1em todo yes */
   text-align: center;
+  font-size: 100%;
 }
 
 .header-margin-forgame {
@@ -302,22 +303,30 @@ img {
 
   input[type=submit] {
     margin: 1em auto;
-  } /* todo */  
+  }  /* todo */  
 
   #lets-play-button {
     font-size: 2.8em; /* todo */
   }  
 
+  td {
+    font-size: 1.5em;
+  }
+
+  #vid3 {
+    font-size: 125%;
+  }
 }
 
 @media (min-width: 768px) {
   /* input[type=submit] {
     margin: 0.4em auto; / *  todo * /
   } 
-   */
+   */ 
    
   .header-margin-forform {
       margin: 1em 0;
+      font-size: 100%; /* yes dupl */
   }
 
   #lets-play-button {
@@ -342,6 +351,10 @@ img {
   .side-margins {
     margin: 0 10vw;
   }
+
+  #lets-play-button { /* yes */
+        margin: 1em auto;
+  }   
 
 }
 
@@ -416,7 +429,7 @@ img {
   
     h1,
     h2 {
-      font-size: 70%;
+      font-size: 160%; /* 70%; yes */ 
     }
 
     /* todo1
@@ -444,43 +457,29 @@ img {
       font-size: 10em; /* todo * /
     }
 */
+
+/* todo check */
+#align-rounds {
+  margin: 0 1em 1em 12px;
+}
+#align-random {
+  margin: 0 2em 0 -15px;
 }
 
-@media (max-width: 460px) {
-
-  .show-form {
-    font-size: 60%;
-    font-size: 180%; /* dupl */
-  }
-
-  .rules-container {
-    font-size: 130%;
-    font-size: 55%; /* todo*/
-    font-size: 17px;
+.header-margin-forform {
+  font-size: 200%;
 }
-
-  /* Handle the length of the player's name */
-
-  /* .column-centre-aligned h2 {
-    font-size: 90%;
-  }    */
-
-  #vid2x {
-    /*todo*/
-    font-size: 250%;
-  }
-
-  #vid2x p {
-    /*todo*/
-    font-size: 200%;
-  }
-
-
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 540px) {
 
+  /* yes */
+  
+  table {
+    width: 90%;
+  }
+    
   #align-rounds {
     margin: 0 1em 1em 10px;
   }
@@ -520,11 +519,53 @@ td:nth-child(2)  {
 }  
 
 .rules-header {
-  font-size: 100%; /* todo 125%; */
+  font-size: 150%; /* yes todo 125%; */
 }
 
 }
 
+@media (max-width: 480px) { /* yes 460px */
+
+  .show-form {
+    font-size: 60%;
+    font-size: 180%; /* dupl */
+  }
+
+  .rules-container {
+    font-size: 130%;
+    font-size: 55%; /* todo*/
+    font-size: 17px;
+}
+
+  /* Handle the length of the player's name */
+
+  /* .column-centre-aligned h2 {
+    font-size: 90%;
+  }    */
+
+  #vid2x {
+    /*todo*/
+    font-size: 250%;
+  }
+
+  #vid2x p {
+    /*todo*/
+    font-size: 200%;
+  }
+
+  .header-margin-forform {
+    font-size: 150%;
+  }
+
+}
+
+
+@media (max-width: 480px) { /* yes 460px dupl */
+  
+.rules-header {
+  font-size: 100%; /* yes todo */
+}
+}
 @media (max-width: 415px) {
 
   /* .header-margin-forform {
@@ -553,9 +594,9 @@ td:nth-child(2)  {
 
 @media (max-width: 375px) {
 
-  #align-random {
+  /* #align-random {
     margin: 0 2em 0 6px;
-  } 
+  }  */
 
 /* Handle the spacing of the weapon buttons */
 
@@ -628,12 +669,12 @@ td:nth-child(2)  {
 
 }
 
-@media (max-width: 320px) {
+@media (max-width: 380px) { /* yes */
 
-  h1,
+  /* h1,
   h2 {
     font-size: 100%;
-  }
+  } */
 
   .form-container {
     font-size: 70%;
@@ -688,6 +729,13 @@ td:nth-child(2)  {
     font-size: 100%;
   }  
 
+  .rules-container {
+    font-size: 75%;
+  }
+
+  #vid3 {
+    font-size: 200%; /* yes */
+  }
 }
 
 /* todo 
