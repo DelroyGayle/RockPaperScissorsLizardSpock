@@ -179,6 +179,10 @@ input[type=submit] {
   font-size: 2em;
 }
 
+#rules-part-2 {
+  font-size: 16px;
+}
+
 .video-container {
   display: block;
   font-family: "Krona One", Arial, Tahoma, sans-serif;
@@ -279,9 +283,9 @@ img {
     font-size: 1.5em;
   }
 
-  #rules-part-2 {
+  /* #rules-part-2 { todo
     font-size: 125%;
-  }
+  } */
 
   input[type=submit] {
     margin: 1em auto;
@@ -298,14 +302,13 @@ img {
 }
 
 @media (min-width: 768px) {
-  /* input[type=submit] {
-    margin: 0.4em auto; / *  todo * /
-  } 
-   */ 
    
   .header-margin-for-form {
       margin: 1em 0;
-      font-size: 100%; /* yes dupl */
+  }
+
+  .rules-container {
+    font-size: 10px;
   }
 
   #lets-play-button {
@@ -325,14 +328,14 @@ img {
     font-size: 110%;
   }
 
-/* Create more width */
+  /* Create more width */
 
   .side-margins {
     margin: 0 10vw;
   }
 
-  #lets-play-button { /* yes */
-        margin: 1em auto;
+  #lets-play-button {
+    margin: 1em auto;
   }   
 
 }
@@ -345,7 +348,7 @@ img {
   }
 
   .playername-control {
-    width: 30%; /* todo */
+    width: 30%;
   }
 
 }
@@ -360,8 +363,12 @@ img {
   }
 
   .rules-container {
-    /* font-size: 80%; */
     font-size: 10px;
+  }
+
+  input[type=submit],
+  .playagain-button {
+    font-size: 3em;
   }
 
   /* Handle the length of the player's name */
@@ -370,15 +377,9 @@ img {
     font-size: 75%;
   } 
 
-  input[type=submit],
-  .playagain-button {
-    font-size: 3em;
-  }
 }
 
 @media (max-width: 650px) {
-
-   /* todo */
 
 /* Handle the spacing of the weapon buttons */
 
@@ -402,101 +403,68 @@ img {
   
     h1,
     h2 {
-      font-size: 160%; /* 70%; yes */ 
+        font-size: 160%;
     }
 
-    /* todo1
-    .form-container {
-       padding-top: 8em; / * todo6 * /
+    .header-margin-for-form {
+        font-size: 200%;
     }
-    */
 
     .show-form {
-      font-size: 60%;
-      /*font-size: 155%; /* todo5 */
-      font-size: 180% /* yes6 */
+        font-size: 180%;
+    }
+
+    /* Align the words 'Rounds' and 'Random' */
+
+    #align-rounds {
+        margin-left: 12px;
+    }
+
+    #align-random {
+        margin-left: -4px;
     }
 
     .rules-container * {
-      font-size: 140%; /* 150% */
-      font-size: 17px;
+        font-size: 17px;
     }
 
     #rules-part-2 {
         font-size: 14px;
     }
-/* todo
-    #lets-play-button {
-      font-size: 10em; /* todo * /
-    }
-*/
 
-/* Align the words 'Rounds' and 'Random' */
-
-#align-rounds {
-  margin: 0 1em 1em 12px;
 }
-
-#align-random {
-  margin: 0 2em 0 -4px;
-}
-
-.header-margin-for-form {
-  font-size: 200%;
-}
-}
-
 
 @media (max-width: 540px) {
 
-  /* yes */
+/* Align the word 'Rounds' */
+    
+  #align-rounds {
+    margin-left: 10px;
+  }
 
+  .rules-header {
+    font-size: 150%;
+  }
+    
   table {
     width: 90%;
   }
-/* Align the word 'Rounds' TODO CHECK DUPL */
-    
-  #align-rounds {
-    margin: 0 1em 1em 10px;
-  }
 
-  /* .rules-header {
-    font-size: 4em;
-  } 
-  
-  yes3
-  */
-
-  /* 
-  td {
-      font-size: 1em;
-  } */
-/* 
-  table {
-    width: 100%; / * todo * /
-  } */
-
-  td:nth-child(1)  {
+  td:nth-child(1) {
     text-align: left;
     font-size: 80%;
-    /* font-siz1: 2em; */
-}
+  }
 
-td:nth-child(2)  {
+  td:nth-child(2) {
     text-align: right;
     padding: 0;
     font-size: 80%;
-    /* font-siz1: 2em; */
-}
+  }
 
-#lets-play-button {
-  margin: 0 auto; /* todo */
-  font-size: 2em;
-}  
-
-.rules-header {
-  font-size: 150%; /* yes todo 125%; */
-}
+  #lets-play-button {
+    margin: 0 auto;
+    font-size: 2em;
+  }  
 
 }
 
@@ -566,19 +534,6 @@ td:nth-child(2)  {
     padding: 5px 20px;
     flex: 0 0 100%;
     max-width: 75px;
-  }
-
-}
-
-@media (min-width: 768px) {
-  
-  .rules-headerxx {
-    font-size: 180%; /* 115 todo */
-  }
-
-  .rules-container {
-    font-size: 0.8em; /* 100% */
-    font-size: 10px; /* yes1 */
   }
 
 }
