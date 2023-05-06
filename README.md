@@ -155,7 +155,7 @@ An image depicting the user's weapon choice is shown on the left; seconds later,
 
 The winner of that round is then determined and a message is shown to explain why the user ***either won or lost that round.***<br> 
 Then a point is given to the victor. 
-
+  
 At any time, the user can choose to reset the game by clicking the Home button which in turn will send the user back to the Home page.
 Thereby the user can enter a different ***rounds number*** choice and a new name. The scoring will be reset.
 
@@ -180,21 +180,22 @@ Thereby the user can enter a different ***rounds number*** choice and a new name
 * The user can then choose to play ***Kool AI*** again by clicking the ***Play Again!*** button.
   
  ![image](https://user-images.githubusercontent.com/91061592/233752898-d2bf2c07-8898-4db8-90fb-188594933d12.png)
+  
+* Please note: if the user had selected **random** for the number of rounds, then a **new** random number of rounds between 1 and 15 inclusive will be used for the next round.
 
-* At any time, the user can choose to read the rules by clicking the rules button at the bottom of the screen.
+* At any time, the user can reset the game by clicking the Home button at the bottom of the page.
 
-![image](https://user-images.githubusercontent.com/91061592/233779989-9f0ae49f-2081-4491-88f1-091d3f0b6550.png)
+![image](https://user-images.githubusercontent.com/91061592/236622012-344d7ae4-6b07-4f28-806f-dbd6f1327411.png)
 
 
-Please note: if the user had selected **random** for the number of rounds, then a **new** random number of rounds between 1 and 15 inclusive will be used for the next round.
 
 ### Player's Name
   
 What follows are screenshots of the same above scenarios. The difference being that the user had entered their name:<br>
   
-* Please note: as one enters their name, the name is automatically converted to ***Title case***. That is, each separate word is capitalised whilst the rest of the letters are in lowercase. 
+![image](https://user-images.githubusercontent.com/91061592/236622456-9702ab14-521d-4f62-8d60-f01fd9929461.png)
   
-![image](https://user-images.githubusercontent.com/91061592/233777585-7137f0ff-2c9b-4dc6-958a-cb789dd31041.png)
+* Please note: as one enters their name, the name is automatically converted to ***Title case***. That is, each separate word is capitalised whilst the rest of the letters are in lowercase. 
   
 * ***Title case*** is also used to display the player's name when the game begins.  
   
@@ -504,13 +505,13 @@ So, the five buttons have the form as follows:
   
   ![image](https://user-images.githubusercontent.com/91061592/233749891-9b907a88-0a86-497d-b42d-e83946609050.png)
 
- * The background colour for the ***Let's Play!*** button, the ***Play Again!*** button and the ***Rules*** button is **#6725cc**
+ * The background colour for the ***Let's Play!*** button, the ***Play Again!*** button and the ***Home*** button is **#6725cc**
   
   ![image](https://user-images.githubusercontent.com/91061592/233750182-d5bf5a40-bf8e-42a1-9854-fec2fde1dadb.png)
 
   ![image](https://user-images.githubusercontent.com/91061592/233752898-d2bf2c07-8898-4db8-90fb-188594933d12.png)
   
-  ![image](https://user-images.githubusercontent.com/91061592/233780013-52e486ab-3fca-485c-b1d1-d56b55182770.png)
+  ![image](https://user-images.githubusercontent.com/91061592/236622290-b6a58262-0386-4803-bc2f-f0ff79a6581a.png)
   
   ![image](https://user-images.githubusercontent.com/91061592/233750300-e1d38e73-b84c-467a-8a31-dea5ada023f2.png)
 
@@ -532,7 +533,7 @@ No errors found when running the code through [the Jshint validator](https://jsh
 
 ### Lighthouse
 
-![image](https://user-images.githubusercontent.com/91061592/233813832-f88f1f63-cd36-4963-af35-b44cbe6b4a60.png)
+![image](https://user-images.githubusercontent.com/91061592/236622739-bd247f16-ce3d-42d3-8550-706da7224f91.png)
 
 
 ## Bugs
