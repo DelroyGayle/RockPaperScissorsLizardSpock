@@ -468,61 +468,64 @@ img {
 
 }
 
-@media (max-width: 480px) { /* yes 460px */
+@media (max-width: 480px) {
+
+  h1, 
+  h2 {
+    font-size: 150%;
+  }
+
+  .header-margin-for-form {
+    font-size: 150%;
+  }
 
   .show-form {
-    font-size: 60%;
-    font-size: 180%; /* dupl */
+    font-size: 180%;
   }
 
   .rules-container {
-    font-size: 130%;
-    font-size: 55%; /* todo*/
     font-size: 17px;
-}
-
-   .header-margin-for-form {
-    font-size: 150%;
   }
-
-}
-
-
-@media (max-width: 480px) { /* yes 460px dupl */
   
-.rules-header {
-  font-size: 100%; /* yes todo */
+  .rules-header {
+    font-size: 100%;
+  }
+  
 }
-}
+
 @media (max-width: 415px) {
-
-  /* .header-margin-for-form {
-    font-size: 70%;
-  }  NO todo    */
-
-  /* .show-form {
-    font-size: 60%;
-  } */
-
-  /* yes */
-  h1, h2 {
-    font-size: 150%;
-  }
-
-  .rules-container {
-    /* font-size: 200%; / * todo 55% */
-  }
 
   #lets-play-button {
     margin: 0 auto;
     font-size: 1em;
-}
+  }
 
 }
 
-@media (max-width: 375px) {
+@media (max-width: 390px) {
 
-/* Handle the spacing of the weapon buttons */
+  .form-container {
+    font-size: 70%;
+  }
+
+  .rules-container * {
+    font-size: 12px;
+  }
+
+  .rules-header {
+    font-size: 12px;
+  }
+
+  #lets-play-button {
+    margin: 0 auto;
+    font-size: 0.7em;
+  }
+
+  .header-margin-for-game {
+    font-size: 100%;
+  }
+
+  /* Handle the spacing of the weapon buttons on mobile phones */
 
   .flex {
     flex-wrap: wrap;
@@ -530,72 +533,42 @@ img {
   } 
 
   .weapon-button {
-    font-size: 180%; /* yes */
+    font-size: 180%;
     padding: 5px 20px;
     flex: 0 0 100%;
-    max-width: 75px;
+    max-width: 80px;
   }
 
 }
-
-/* Handle the spacing of the weapon buttons on mobile phones */
 
 @media (max-width: 325px) {
 
-  .header-margin-for-game {
-    font-size: 100%;
-}
+  /* Handle the spacing of the weapon buttons on mobile phones */
 
   .weapon-button {
-    font-size: 150%; /* 150% todo */
-    padding: 5px 20px;
-    flex: 0 0 100%;
+    font-size: 150%;
     max-width: 65px;
   }
-
 
   /* After testing with https://ui.dev/amiresponsive
      The YOUR MOVE! needs to be smaller
   */
 
   .circle {
-  width: 90px;
-  height: 90px;
-  font-size: 18px;
+    width: 90px;
+    height: 90px;
+    font-size: 18px;
   }
 
 }
 
-@media (max-width: 380px) { /* yes */
+/* Handle Galaxy Fold */
 
-  /* h1,
-  h2 {
-    font-size: 100%;
-  } */
+@media (max-width: 280px) {
 
-  .form-container {
-    font-size: 70%;
+  .header-margin-for-game {
+    font-size: 85%;
   }
-
-  .rules-container {
-    font-size: 40%;
-    font-size: 17px;
-  }
-
-  .rules-header {
-    font-size: 125%; /* 115 todo */
-    font-size: 5em;
-    font-size: 12px; /* yes */
-  }
-
-  .rules-container * {
-    font-size: 12px;
-  }
-
-  #lets-play-button {
-    margin: 0 auto; /* todo */
-    font-size: 0.7em;
-  } 
 
 }
 
