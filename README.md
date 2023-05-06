@@ -122,7 +122,7 @@ body {
 ***
 ## How to Play
 
-### The Form
+### Home page: The Form
   
 ![image](https://user-images.githubusercontent.com/91061592/236620137-0e4af444-5f48-48f8-a65d-c6bc01b3042f.png)
 
@@ -191,7 +191,7 @@ Thereby the user can enter a different ***rounds number*** choice and a new name
 
 ### Player's Name
   
-What follows are screenshots of the same above scenarios. The difference being that the user had entered their name:<br>
+What follows are screenshots of a sample game session whereby the user had entered their name:<br>
   
 ![image](https://user-images.githubusercontent.com/91061592/236622456-9702ab14-521d-4f62-8d60-f01fd9929461.png)
   
@@ -722,7 +722,7 @@ The above changes successfully removed the Jshint warning.
 
 ### Tools
 * [GitHub](https://github.com/)
-* [GitPod](https://www.gitpod.io/docs/configure/)
+* [GitPod](https://www.gitpod.io/)
 * [W3C HTML Validation service](https://validator.w3.org/)
 * [W3C CSS Validation service](https://jigsaw.w3.org/css-validator/)
 * [JSHint, a JavaScript Code Quality Tool](https://jshint.com/)
