@@ -151,7 +151,7 @@ input[type=submit],
   padding: 5px 15px;
   background: #6725cc;
   color: white;
-  font-size: 3em;
+  font-size: 140%;
   border: 0 none;
   cursor: pointer;
   border-radius: 5px;
@@ -271,21 +271,8 @@ img {
 
 @media (min-width: 960px) {
 
-  .final-score-message {
-      font-size: 120%;
-  }
-
   .rules-container {
-    font-size: 1.1em;
-    font-size: 17px; /* yes */
-  }  
-
-  input[type=submit] {
-    margin: 1em auto;
-  }  /* todo */  
-
-  #lets-play-button {
-    font-size: 2.8em; /* todo */
+    font-size: 17px;
   }  
 
   td {
@@ -295,6 +282,19 @@ img {
   #rules-part-2 {
     font-size: 125%;
   }
+
+  input[type=submit] {
+    margin: 1em auto;
+  }
+
+  #lets-play-button {
+    font-size: 2.8em;
+  }  
+
+  .final-score-message {
+    font-size: 120%;
+  }
+
 }
 
 @media (min-width: 768px) {
@@ -352,16 +352,16 @@ img {
 
 @media (max-width: 768px) {
 
-  .rules-container {
-    /* font-size: 80%; */
-    font-size: 10px;
-  }
-
   img {
     width: 34vw;
     height: 34vw;
     object-fit: cover;
     object-position: top;
+  }
+
+  .rules-container {
+    /* font-size: 80%; */
+    font-size: 10px;
   }
 
   /* Handle the length of the player's name */
@@ -370,6 +370,10 @@ img {
     font-size: 75%;
   } 
 
+  input[type=submit],
+  .playagain-button {
+    font-size: 3em;
+  }
 }
 
 @media (max-width: 650px) {
@@ -670,11 +674,3 @@ td:nth-child(2)  {
     font-size: 200%; /* yes */
   }
 }
-
-/* todo 
-@media (min-height: 960px) {
-  .rules-container {
-    font-size: 100%;
-  }
-}
-*/
