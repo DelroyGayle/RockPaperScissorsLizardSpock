@@ -1,6 +1,7 @@
 /*--------------
   Global
 ---------------*/
+
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 * {
@@ -282,10 +283,6 @@ img {
   td {
     font-size: 1.5em;
   }
-
-  /* #rules-part-2 { todo
-    font-size: 125%;
-  } */
 
   input[type=submit] {
     margin: 1em auto;
@@ -577,28 +574,25 @@ img {
 /* Handle Nest Hub: Height 600px */
 
 @media (max-height: 601px) and (min-width: 460px) {
-  .show-form p {
-    margin: 0;
-  }
-
-  input[type=submit] {
-    margin: 1em auto;
-  }
-
-  .rules-container {
-    font-size: 80%;
-    font-size: 17px;
-  }  
 
   .header-margin-for-form {
     font-size: 100%;
   }  
+
+  .show-form p {
+    margin: 0;
+  }
 
   .rules-container {
     font-size: 75%;
   }
 
   #rules-part-2 {
-    font-size: 200%; /* yes */
+    font-size: 200%;
   }
+
+  input[type=submit] {
+    margin: 1em auto;
+  }
+
 }
