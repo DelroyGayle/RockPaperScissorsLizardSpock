@@ -256,7 +256,8 @@ function runTheGame() {
    // Create Play Again Button
    const playAgainButton = document.createElement("button");
    playAgainButton.innerText = "Play Again!";
-   // Add styling
+   // Add aria-label, styling and event listener
+   playAgainButton.setAttribute("aria-label", "Play Again Button");
    playAgainButton.classList.add("playagain-button");
    playAgainButton.addEventListener("click", function (event) {
       event.preventDefault();
@@ -267,7 +268,8 @@ function runTheGame() {
    // Create Home Button
    const homeButton = document.createElement("button");
    homeButton.innerHTML = "Home <i class=\"fas fa-home\"></i>";
-   // Add styling
+   // Add aria-label, styling and event listener
+   homeButton.setAttribute("aria-label", "Home Button");
    homeButton.classList.add("playagain-button");
    homeButton.style.marginTop = "2em";
    homeButton.addEventListener("click", function (event) {
@@ -624,7 +626,8 @@ function runTheGame() {
       const local_homeButton = document.createElement("button");
       // Add icon
       local_homeButton.innerHTML = "Home <i class=\"fas fa-home\"></i>";
-      // Add styling
+   // Add aria-label, styling and event listener
+      local_homeButton.setAttribute("aria-label", "Home Button");      
       local_homeButton.classList.add("playagain-button");
       local_homeButton.style.marginTop = "2em";
       local_homeButton.addEventListener("click", function (event) {
